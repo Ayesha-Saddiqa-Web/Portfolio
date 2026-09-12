@@ -33,8 +33,8 @@
     --font-body: 'Inter', system-ui, -apple-system, sans-serif;
     --font-heading: 'Fraunces', Georgia, serif;
 
-    --radius: 16px;
-    --radius-lg: 22px;
+    --radius: 14px;
+    --radius-lg: 18px;
 }
 
 body.dark-mode {
