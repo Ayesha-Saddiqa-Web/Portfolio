@@ -7,6 +7,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@300;400;500;600;700;800&display=swap');
 
 :root {
+   --gold: #c9a24b;
     /* accent + core (names kept so inline var(--primary) etc. keep working) */
     --primary: #c19a4b;          /* gold accent */
     --primary-light: #efe4c8;    /* pale gold */
@@ -310,17 +311,17 @@ body.dark-mode .timeline-date { color: var(--gold-soft); }
     .timeline-item.left .timeline-dot, .timeline-item.right .timeline-dot { left: 13px; right: auto; }
 }
 
-/* ---------- SKILLS / COMPETENCIES (modern percentage bars) ---------- */
-.skills-container { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.8rem 3rem; max-width: 920px; margin: 0 auto; }
+/* ---------- SKILLS / COMPETENCIES (percentage bars) ---------- */
+.skills-container { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.9rem 3.2rem; max-width: 940px; margin: 0 auto; }
 .full-width-skill { grid-column: 1 / -1; }
-.skill-box { display: flex; flex-direction: column; gap: 0.6rem; }
+.skill-box { display: flex; flex-direction: column; gap: 0.65rem; }
 .skill-info { display: flex; justify-content: space-between; align-items: center; }
-.skill-name { font-size: 1rem; font-weight: 600; color: var(--dark); display: flex; align-items: center; gap: 0.6rem; font-family: var(--font-body); }
-.skill-name i { color: var(--gold-deep); font-size: 1.1rem; }
+.skill-name { font-size: 1.05rem; font-weight: 700; color: var(--dark); display: flex; align-items: center; gap: 0.6rem; font-family: var(--font-body); }
+.skill-name i { color: var(--gold-deep); font-size: 1.15rem; }
 body.dark-mode .skill-name i { color: var(--gold-soft); }
-.skill-percent { font-weight: 700; color: var(--gold-deep); font-size: 0.98rem; }
+.skill-percent { font-weight: 700; color: var(--gold-deep); font-size: 1rem; }
 body.dark-mode .skill-percent { color: var(--gold-soft); }
-.skill-bar { width: 100%; height: 12px; background-color: color-mix(in srgb, var(--navy) 10%, var(--white)); border-radius: 999px; overflow: hidden; box-shadow: inset 0 2px 4px rgba(14,28,48,0.10); }
+.skill-bar { width: 100%; height: 14px; background-color: color-mix(in srgb, var(--navy) 9%, var(--white)); border-radius: 999px; overflow: hidden; box-shadow: inset 0 2px 4px rgba(14,28,48,0.10); }
 body.dark-mode .skill-bar { background-color: rgba(255,255,255,0.07); }
 .skill-fill { height: 100%; width: 0; border-radius: 999px; background: linear-gradient(90deg, var(--gold-deep), var(--gold-soft)); transition: width 1.5s cubic-bezier(0.22, 1, 0.36, 1); }
 
@@ -477,3 +478,5 @@ body.dark-mode .course-meta { color: var(--gold-soft); }
 
 .thesis-btn { display: inline-flex; align-items: center; gap: 0.6rem; background: linear-gradient(120deg, var(--gold), var(--gold-soft)); color: #1a1204; font-family: var(--font-body); font-weight: 600; font-size: 0.95rem; padding: 0.85rem 1.7rem; border-radius: 999px; transition: var(--transition-snappy); box-shadow: 0 10px 24px -10px rgba(193,154,75,0.6); }
 .thesis-btn:hover { transform: translateY(-2px); gap: 0.9rem; box-shadow: 0 16px 30px -10px rgba(193,154,75,0.85); }
+
+.footer-credit { padding: 0.8rem 1rem !important; }
