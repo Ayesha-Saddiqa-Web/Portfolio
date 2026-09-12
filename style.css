@@ -479,4 +479,24 @@ body.dark-mode .course-meta { color: var(--gold-soft); }
 .thesis-btn { display: inline-flex; align-items: center; gap: 0.6rem; background: linear-gradient(120deg, var(--gold), var(--gold-soft)); color: #1a1204; font-family: var(--font-body); font-weight: 600; font-size: 0.95rem; padding: 0.85rem 1.7rem; border-radius: 999px; transition: var(--transition-snappy); box-shadow: 0 10px 24px -10px rgba(193,154,75,0.6); }
 .thesis-btn:hover { transform: translateY(-2px); gap: 0.9rem; box-shadow: 0 16px 30px -10px rgba(193,154,75,0.85); }
 
+
+
+
+
+
+/* ===== Modern Academic Publications ===== */
+#publications .card-grid { gap: 1.6rem; }
+.pub-card { position: relative; overflow: hidden; display: flex; flex-direction: column; padding: 2rem 2rem 1.85rem 2.2rem; border-left: 4px solid var(--gold); }
+.pub-card::before { content: "\f02d"; font-family: "Font Awesome 6 Free"; font-weight: 900; position: absolute; top: -0.8rem; right: 0.2rem; font-size: 5.5rem; line-height: 1; color: color-mix(in srgb, var(--gold) 12%, transparent); pointer-events: none; }
+.pub-card a { display: flex; flex-direction: column; align-items: flex-start; position: relative; z-index: 1; }
+.pub-card .status-badge { order: -1; margin: 0 0 1rem 0; color: #1a1204 !important; box-shadow: 0 6px 16px -8px rgba(193,154,75,0.8); }
+.pub-card h3 { font-size: 1.15rem; line-height: 1.4; margin-bottom: 0.55rem; padding-right: 2rem; transition: color var(--transition-snappy); }
+.pub-card:hover h3 { color: var(--gold-deep); }
+body.dark-mode .pub-card:hover h3 { color: var(--gold-soft); }
+.pub-card p { color: var(--text-muted); font-style: italic; font-size: 0.95rem; margin: 0; }
+.pub-card .cite-btn { margin-top: auto !important; align-self: flex-start; position: relative; z-index: 1; }
+.pub-card .pub-actions { margin-top: auto; display: flex; flex-wrap: wrap; gap: 0.6rem; position: relative; z-index: 1; }
+
+
+
 .footer-credit { padding: 0.8rem 1rem !important; }
