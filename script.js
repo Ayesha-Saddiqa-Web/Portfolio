@@ -152,7 +152,7 @@ document.addEventListener('DOMContentLoaded', () => {
         certCards.forEach(card => {
             card.addEventListener("click", function() {
                 const img = this.querySelector("img");
-                if(img && !card.classList.contains('corner-right')) { // Ignore pending award card
+                if(img) {
                     modal.classList.add("show-modal");
                     modalImg.src = img.src;
                     
