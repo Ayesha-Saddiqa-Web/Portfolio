@@ -502,3 +502,28 @@ body.dark-mode .pub-card:hover h3 { color: var(--gold-soft); }
 @media (max-width: 900px) { #publications .card-grid { grid-template-columns: 1fr !important; max-width: 560px !important; } }
 
 .footer-credit { padding: 0.8rem 1rem !important; }
+
+/* ===== Navy (blue) cards: Featured Research + Coursework ===== */
+/* Project cards */
+#projects .card { background: linear-gradient(160deg, #16273f, #0e1c30); border-color: rgba(216,177,95,0.28); }
+#projects .card .card-info h3 { color: #f3f6fb; }
+#projects .card .card-info p { color: #c4cede; }
+#projects .card .read-more { color: var(--gold-soft); }
+#projects .card:hover { border-color: var(--gold); }
+#projects .card .project-status-highlight { color: var(--gold-soft); background: rgba(216,177,95,0.16); border-color: rgba(216,177,95,0.4); }
+#projects .card .ph-media { background: repeating-linear-gradient(135deg, rgba(216,177,95,0.10), rgba(216,177,95,0.10) 14px, transparent 14px, transparent 28px); color: var(--gold-soft); }
+
+/* Homepage coursework columns */
+.course-column { background: linear-gradient(160deg, #16273f, #0e1c30); border-color: rgba(216,177,95,0.28); }
+.course-column .column-title { color: #f3f6fb; border-bottom-color: rgba(255,255,255,0.12); }
+.course-column .mini-course-row h4 { color: #eef2f8; }
+.course-column .mini-course-row p { color: #9fb2c8; }
+.course-column .mini-course-row i { color: var(--gold-soft); }
+.course-column .mini-course-row:hover { background: rgba(255,255,255,0.06); }
+
+/* Courses page blocks */
+.course-block { background: linear-gradient(160deg, #16273f, #0e1c30); border-color: rgba(216,177,95,0.28); }
+.course-block .course-text h3 { color: #f3f6fb; }
+.course-block .course-text p { color: #c4cede; }
+.course-block .course-meta { color: var(--gold-soft); }
+.course-block .course-icon { background: rgba(216,177,95,0.16); border-color: rgba(216,177,95,0.4); color: var(--gold-soft); }
